@@ -1,0 +1,92 @@
+%% AutoMLOps Platform - complete but readable end-to-end flowchart
+%% Preview: https://mermaid.live  |  PNG: scripts/export_mermaid_pngs.py
+
+flowchart TD
+    START([User opens Web UI at /ui/]) --> S0
+
+    subgraph UI["10-Step Web UI Workflow"]
+        direction TB
+        S0["0. Dashboard - stats and job history"]
+        S1["1. Upload CSV"]
+        S2["2. Profile - types, missing, leakage"]
+        S3["3. EDA - charts and correlations"]
+        S4["4. Train Model"]
+        S5["5. Predict - single or batch"]
+        S6["6. Monitor Drift"]
+        S7["7. AI Advisor"]
+        S8["8. ML Chat"]
+        S9["9. ML Suite - enterprise tools"]
+
+        S0 --> S1 --> S2 --> S3 --> S4 --> S5 --> S6
+        S6 --> S7 --> S8 --> S9
+    end
+
+    subgraph PIPELINE["AutoML Pipeline - triggered by Step 4"]
+        direction TB
+        P1[Profile and Leakage Check]
+        P2[Clean, Outliers, Feature Engineering]
+        P3[Feature Selection]
+        P4[Model Selection - 10+ algorithms]
+        P5[Optuna Hyperparameter Tuning]
+        P6[Train, Evaluate, SHAP]
+        P7[Model Review, Advisor, Model Card]
+        P8[MLflow Tracking and Registry]
+
+        P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8
+    end
+
+    S4 -.->|POST /pipeline/run| P1
+    P8 -.->|job_id and metrics| S5
+
+    subgraph DRIFT["Drift Monitoring - Step 6"]
+        D1[Upload new CSV batch]
+        D2[Evidently drift report]
+        D3{Drift detected?}
+        D4[Optional auto-retrain]
+
+        D1 --> D2 --> D3
+        D3 -->|yes| D4 -.-> S4
+        D3 -->|no| S7
+    end
+
+    S6 --> D1
+
+    subgraph AI["AI Layer - Steps 7 and 8"]
+        A1[Dataset fingerprint]
+        A2[RAG - past runs, Tavily, arXiv, Kaggle]
+        A3[LLM narrative - Groq]
+        A1 --> A2 --> A3
+
+        C1[User question]
+        C2{LLM available?}
+        C3[ReAct agent with tools]
+        C4[Rules-based fallback]
+        C1 --> C2
+        C2 -->|yes| C3
+        C2 -->|no| C4
+    end
+
+    S7 --> A1
+    S8 --> C1
+
+    subgraph STORE["Persistent Outputs"]
+        O1[(pipeline.joblib)]
+        O2[(MLflow experiment runs)]
+        O3[(Drift reference dataset)]
+        O4[(Reports, SHAP, model card)]
+    end
+
+    P8 --> STORE
+    D2 --> O3
+    A3 --> O4
+
+    S5 --> END([Production-ready model and insights])
+    S9 --> END
+
+    style START fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+    style END fill:#DCFCE7,stroke:#16A34A,color:#14532D
+    style S4 fill:#FFEDD5,stroke:#EA580C,color:#9A3412
+    style S6 fill:#FEE2E2,stroke:#DC2626,color:#7F1D1D
+    style S7 fill:#E0E7FF,stroke:#4F46E5,color:#312E81
+    style S8 fill:#E0E7FF,stroke:#4F46E5,color:#312E81
+    style S9 fill:#F3E8FF,stroke:#9333EA,color:#581C87

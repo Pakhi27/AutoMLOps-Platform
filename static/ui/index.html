@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMLOps Platform</title>
+  <link rel="stylesheet" href="/ui/css/app.css?v=9" />
+  <script>
+    if (location.protocol === "file:") {
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.innerHTML =
+          "<main style='max-width:640px;margin:3rem auto;font-family:system-ui;padding:1rem'>" +
+          "<h1>AutoMLOps UI must run via the server</h1>" +
+          "<p>Do not open <code>index.html</code> directly from the folder.</p>" +
+          "<ol><li>Open a terminal in the <code>automl-platform</code> folder</li>" +
+          "<li>Run <code>start.bat</code></li>" +
+          "<li>Go to <a href='http://localhost:8000/ui/'>http://localhost:8000/ui/</a></li></ol></main>";
+      });
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="brand-icon">⚡</span>
+      <div>
+        <h1>AutoMLOps Platform</h1>
+        <p>Enterprise AutoML · Train · Monitor · Advise</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span id="api-status" class="badge badge-muted">Checking API…</span>
+      <a href="/docs" class="link-btn" target="_blank" rel="noopener">API Docs</a>
+    </div>
+  </header>
+
+  <main class="layout-main">
+    <aside class="workflow-sidebar">
+      <h3 class="workflow-title">Workflow</h3>
+      <nav class="workflow-tracker" id="workflow-tracker"></nav>
+      <nav class="steps steps-icons" id="steps-nav">
+        <button class="step" data-step="0" title="Dashboard"><span class="step-icon">🏠</span><span class="step-label">Home</span></button>
+        <button class="step" data-step="1" title="Upload"><span class="step-icon">📁</span><span class="step-label">Upload</span></button>
+        <button class="step" data-step="2" title="Profile"><span class="step-icon">📊</span><span class="step-label">Profile</span></button>
+        <button class="step" data-step="3" title="EDA"><span class="step-icon">📈</span><span class="step-label">EDA</span></button>
+        <button class="step" data-step="4" title="Train"><span class="step-icon">🤖</span><span class="step-label">Train</span></button>
+        <button class="step" data-step="5" title="Predict"><span class="step-icon">🎯</span><span class="step-label">Predict</span></button>
+        <button class="step" data-step="6" title="Drift"><span class="step-icon">📉</span><span class="step-label">Drift</span></button>
+        <button class="step" data-step="7" title="AI Advisor"><span class="step-icon">🧠</span><span class="step-label">Advisor</span></button>
+        <button class="step" data-step="8" title="ML Chat"><span class="step-icon">💬</span><span class="step-label">Chat</span></button>
+        <div class="step-group" id="mle-step-group">
+          <button class="step" data-step="9" title="ML Suite"><span class="step-icon">⚙️</span><span class="step-label">Suite</span></button>
+          <nav class="mle-subnav" id="mle-subnav" aria-label="ML Suite tools">
+            <button type="button" class="mle-subnav-btn" data-mle-feature="quality"><span class="mle-subnav-icon">📊</span> Quality</button>
+            <button type="button" class="mle-subnav-btn" data-mle-feature="leakage"><span class="mle-subnav-icon">🛡️</span> Data Leakage</button>
+            <button type="button" class="mle-subnav-btn" data-mle-feature="review"><span class="mle-subnav-icon">🔍</span> Model Review</button>
+            <button type="button" class="mle-subnav-btn" data-mle-feature="business"><span class="mle-subnav-icon">💼</span> Insights</button>
+            <button type="button" class="mle-subnav-btn" data-mle-feature="compare"><span class="mle-subnav-icon">⚖️</span> Compare</button>
+            <button type="button" class="mle-subnav-btn" data-mle-feature="modelcard"><span class="mle-subnav-icon">📄</span> Model Card</button>
+            <button type="button" class="mle-subnav-btn" data-mle-feature="active"><span class="mle-subnav-icon">🎯</span> Active Learning</button>
+          </nav>
+        </div>
+      </nav>
+    </aside>
+
+    <div class="container content-area">
+
+    <!-- Step 0: Dashboard -->
+    <section class="panel active" id="step-0">
+      <h2>Platform Dashboard</h2>
+      <p class="hint">Overview of your AutoML workspace — models, datasets, and recent runs.</p>
+      <div id="dashboard-stats" class="dashboard-grid">
+        <div class="dash-card"><div class="dash-value" id="dash-models">—</div><div class="dash-label">Models Trained</div></div>
+        <div class="dash-card"><div class="dash-value" id="dash-datasets">—</div><div class="dash-label">Datasets Uploaded</div></div>
+        <div class="dash-card highlight"><div class="dash-value" id="dash-accuracy">—</div><div class="dash-label">Best Score</div></div>
+        <div class="dash-card"><div class="dash-value dash-model" id="dash-latest">—</div><div class="dash-label">Latest Model</div></div>
+        <div class="dash-card"><div class="dash-value" id="dash-drift">—</div><div class="dash-label">Drift-Ready Jobs</div></div>
+        <div class="dash-card"><div class="dash-value" id="dash-ai">—</div><div class="dash-label">AI Reports</div></div>
+      </div>
+      <div class="dash-actions">
+        <button type="button" class="btn primary" data-goto-step="1">📁 Upload new dataset</button>
+        <button type="button" class="btn" data-goto-step="4">🤖 Start training</button>
+        <button type="button" class="btn" id="refresh-dashboard-btn">↻ Refresh</button>
+      </div>
+      <h3 class="section-subtitle">Job History</h3>
+      <div id="job-history" class="job-history-list">
+        <p class="hint">No runs yet — upload a dataset and train your first model.</p>
+      </div>
+    </section>
+
+    <!-- Step 1: Upload -->
+    <section class="panel" id="step-1">
+      <h2>📁 Upload / Connect Data</h2>
+      <p class="hint">CSV, Excel, PDF, text, images (ZIP), and more. Data type is auto-detected.</p>
+      <div class="upload-zone" id="upload-zone">
+        <input type="file" id="file-input" accept=".csv,.tsv,.xlsx,.xls,.pdf,.txt,.jsonl,.zip,.jpg,.jpeg,.png" hidden />
+        <p>Drag & drop a file here, or <button type="button" class="text-btn" id="browse-btn">browse</button></p>
+      </div>
+      <div id="upload-result" class="result hidden"></div>
+    </section>
+
+    <!-- Step 2: Profile -->
+    <section class="panel" id="step-2">
+      <h2>📊 Dataset Profile</h2>
+      <p class="hint">Summary of your uploaded data (missing values, types, stats).</p>
+      <div id="profile-content" class="result muted">Upload a dataset first.</div>
+      <div id="profile-intelligence" class="result hidden"></div>
+    </section>
+
+    <!-- Step 3: EDA -->
+    <section class="panel" id="step-3">
+      <h2>📈 Exploratory Data Analysis</h2>
+      <p class="hint">Target distribution, feature correlations, and column-level stats vs target.</p>
+      <label>
+        Target column
+        <select id="eda-target" disabled><option value="">— select after upload —</option></select>
+      </label>
+      <button type="button" class="btn primary" id="eda-btn" disabled>Run EDA</button>
+      <div id="eda-content" class="result hidden"></div>
+    </section>
+
+    <!-- Step 4: Train -->
+    <section class="panel" id="step-4">
+      <h2>🤖 Run AutoML Pipeline</h2>
+      <form id="pipeline-form" class="form-grid">
+        <label>
+          Dataset ID
+          <input type="text" id="dataset-id" readonly placeholder="Upload a dataset first" />
+        </label>
+        <label>
+          Target column
+          <select id="target-column" disabled>
+            <option value="">— select after upload —</option>
+          </select>
+        </label>
+        <label>
+          Optuna trials
+          <input type="number" id="n-trials" value="15" min="2" max="100" />
+        </label>
+        <button type="submit" class="btn primary" id="run-pipeline-btn" disabled>Start training</button>
+      </form>
+      <div id="training-progress-wrap" class="training-progress-wrap hidden">
+        <div id="progress-bar" class="progress-bar">
+          <div id="progress-fill" class="progress-fill" style="width:0%"></div>
+        </div>
+        <div id="training-stages" class="training-stages"></div>
+      </div>
+      <div id="pipeline-status" class="result hidden"></div>
+      <div id="pipeline-metrics" class="metrics-grid hidden"></div>
+      <div id="feature-importance" class="result hidden"></div>
+      <div id="pipeline-intelligence" class="result hidden"></div>
+    </section>
+
+    <!-- Step 5: Predict -->
+    <section class="panel" id="step-5">
+      <h2>🎯 Predict</h2>
+      <p class="hint">Single-row JSON or batch CSV upload.</p>
+      <label>
+        Job ID
+        <input type="text" id="predict-job-id" readonly placeholder="Complete training first" />
+      </label>
+      <label class="checkbox-row">
+        <input type="checkbox" id="explain-shap" checked />
+        Include SHAP explanations (single predict)
+      </label>
+      <label>
+        Records (JSON)
+        <textarea id="predict-records" rows="8" placeholder='[{"col1": 1, "col2": "a"}]'></textarea>
+      </label>
+      <div id="predict-image-preview" class="predict-image-preview hidden"></div>
+      <button type="button" class="btn primary" id="predict-btn" disabled>Run prediction</button>
+      <div class="divider">— or batch CSV —</div>
+      <div class="upload-zone small" id="batch-upload-zone">
+        <input type="file" id="batch-file-input" accept=".csv" hidden />
+        <p>Drop CSV for batch predict or <button type="button" class="text-btn" id="batch-browse-btn">browse</button></p>
+      </div>
+      <button type="button" class="btn" id="counterfactual-btn" disabled title="Tabular CSV models only">Get counterfactual explanation</button>
+      <p class="hint">Counterfactuals apply to <strong>tabular</strong> models only — they suggest feature changes that would flip the prediction (e.g. lower income → no churn).</p>
+      <div id="predict-result" class="result hidden"></div>
+    </section>
+
+    <!-- Step 6: Drift -->
+    <section class="panel" id="step-6">
+      <h2>📉 Monitor Data Drift</h2>
+      <p class="hint">Upload a new CSV batch. Enable auto-retrain if drift is detected.</p>
+      <label>
+        Job ID
+        <input type="text" id="drift-job-id" readonly />
+      </label>
+      <label class="checkbox-row">
+        <input type="checkbox" id="auto-retrain" />
+        Auto-retrain model if drift exceeds threshold
+      </label>
+      <label class="checkbox-row">
+        <input type="checkbox" id="feature-drift-mode" />
+        Per-feature drift analysis
+      </label>
+      <div class="upload-zone small" id="drift-upload-zone">
+        <input type="file" id="drift-file-input" accept=".csv" hidden />
+        <p>Drop drift-check CSV or <button type="button" class="text-btn" id="drift-browse-btn">browse</button></p>
+      </div>
+      <div id="drift-result" class="result hidden"></div>
+    </section>
+
+    <!-- Step 7: AI Advisor -->
+    <section class="panel" id="step-7">
+      <h2>🧠 AI ML Advisor <span class="tag">LangGraph + RAG</span></h2>
+      <p class="hint">Evidence-grounded recommendations — why your model won, risks, and next steps.</p>
+      <label class="checkbox-row">
+        <input type="checkbox" id="advisor-post-train" checked />
+        Post-train mode (use completed job evidence)
+      </label>
+      <button type="button" class="btn primary" id="advisor-btn" disabled>Run AI analysis</button>
+      <div id="advisor-insights" class="advisor-dashboard-wrap hidden"></div>
+    </section>
+
+    <!-- Step 8: ML Chatbot -->
+    <section class="panel" id="step-8">
+      <h2>💬 ML Chatbot <span class="tag">ReAct + Tools</span></h2>
+      <p class="hint">Ask about jobs, features, drift, or retrain in plain English.</p>
+      <div class="chat-status-bar">
+        <span id="chat-status" class="chat-status-pill">Checking chat availability…</span>
+      </div>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="chat-quick-prompts" id="chat-quick-prompts">
+        <button type="button" class="chat-chip" data-chat-prompt="list jobs">List jobs</button>
+        <button type="button" class="chat-chip" data-chat-prompt="What was the best model for my last job?">Best model</button>
+        <button type="button" class="chat-chip" data-chat-prompt="Show feature importance for my last job">Top features</button>
+        <button type="button" class="chat-chip" data-chat-prompt="help">Help</button>
+      </div>
+      <div class="chat-compose">
+        <textarea id="chat-input" rows="2" placeholder="What was the best model for my last job?" disabled></textarea>
+        <button type="button" class="btn primary chat-send-btn" id="chat-btn" disabled>Send</button>
+      </div>
+    </section>
+
+    <!-- Step 9: ML Intelligence Suite -->
+    <section class="panel mle-suite" id="step-9">
+      <header class="mle-hero">
+        <div class="mle-hero-text">
+          <p class="mle-eyebrow">Enterprise tools</p>
+          <h2 id="mle-pane-title">ML Intelligence Suite</h2>
+          <p class="mle-subtitle" id="mle-pane-subtitle">Pick a tool from the sidebar under Suite — each has its own results panel.</p>
+        </div>
+        <div class="mle-context-strip" id="mle-suite-context">
+          <div class="mle-context-chip">
+            <span class="mle-context-label">Dataset</span>
+            <code id="mle-context-dataset">—</code>
+          </div>
+          <div class="mle-context-chip">
+            <span class="mle-context-label">Job</span>
+            <code id="mle-context-job">—</code>
+          </div>
+        </div>
+      </header>
+
+      <div class="mle-pane" id="mle-pane-quality" data-mle-feature="quality">
+        <div class="mle-pane-toolbar">
+          <p class="mle-pane-desc">Score completeness, consistency, validity, and uniqueness before training.</p>
+          <button type="button" class="btn primary" id="mle-quality-btn" disabled>Run quality score</button>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-quality-empty" class="mle-pane-empty">Results will appear here after you run the quality score.</div>
+          <div id="mle-quality-result" class="mle-pane-result hidden" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="mle-pane hidden" id="mle-pane-leakage" data-mle-feature="leakage">
+        <div class="mle-pane-toolbar">
+          <p class="mle-pane-desc">Detect columns that leak target information into features.</p>
+          <button type="button" class="btn primary" id="mle-leakage-btn" disabled>Check data leakage</button>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-leakage-empty" class="mle-pane-empty">Results will appear here after you run the leakage scan.</div>
+          <div id="mle-leakage-result" class="mle-pane-result hidden" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="mle-pane hidden" id="mle-pane-review" data-mle-feature="review">
+        <div class="mle-pane-toolbar">
+          <p class="mle-pane-desc">Automated audit for overfitting, calibration, and class balance.</p>
+          <button type="button" class="btn primary" id="mle-review-btn" disabled>Run model review</button>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-review-empty" class="mle-pane-empty">Complete training first, then run an AI model review.</div>
+          <div id="mle-review-result" class="mle-pane-result hidden" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="mle-pane hidden" id="mle-pane-business" data-mle-feature="business">
+        <div class="mle-pane-toolbar">
+          <p class="mle-pane-desc">Executive summary and top feature drivers for stakeholders.</p>
+          <button type="button" class="btn primary" id="mle-business-btn" disabled>Generate insights</button>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-business-empty" class="mle-pane-empty">Business insights will appear here after generation.</div>
+          <div id="mle-business-result" class="mle-pane-result hidden" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="mle-pane hidden" id="mle-pane-compare" data-mle-feature="compare">
+        <div class="mle-pane-toolbar mle-pane-toolbar-stack">
+          <p class="mle-pane-desc">Compare metrics from two training jobs side by side.</p>
+          <div class="mle-inline-fields">
+            <label><span>Job A</span><input type="text" id="compare-job-a" placeholder="job_xxx" /></label>
+            <label><span>Job B</span><input type="text" id="compare-job-b" placeholder="job_yyy" /></label>
+          </div>
+          <button type="button" class="btn primary" id="mle-compare-btn">Compare runs</button>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-compare-empty" class="mle-pane-empty">Enter two job IDs and click Compare to see results.</div>
+          <div id="mle-compare-result" class="mle-pane-result hidden" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="mle-pane hidden" id="mle-pane-modelcard" data-mle-feature="modelcard">
+        <div class="mle-pane-toolbar">
+          <p class="mle-pane-desc">Model documentation — intended use, metrics, limits, and ethics.</p>
+          <div class="mle-feature-actions-row">
+            <button type="button" class="btn primary" id="mle-modelcard-btn" disabled>View model card</button>
+            <a id="mle-modelcard-download" class="btn btn-ghost hidden" href="#" target="_blank" rel="noopener">Download</a>
+          </div>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-modelcard-empty" class="mle-pane-empty">Open the model card to preview documentation here.</div>
+          <div id="mle-modelcard-result" class="mle-pane-result mle-pane-result-scroll hidden" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="mle-pane hidden" id="mle-pane-active" data-mle-feature="active">
+        <div class="mle-pane-toolbar">
+          <p class="mle-pane-desc">Upload unlabeled CSV — surfaces low-confidence rows for labeling.</p>
+          <div class="upload-zone mle-drop-zone" id="active-learning-zone">
+            <input type="file" id="active-learning-input" accept=".csv" hidden />
+            <p class="mle-drop-title">Drop unlabeled CSV</p>
+            <p class="mle-drop-hint">or <button type="button" class="text-btn" id="active-learning-browse">browse files</button></p>
+          </div>
+        </div>
+        <div class="mle-pane-body">
+          <div id="mle-active-empty" class="mle-pane-empty">Upload a CSV to find uncertain predictions.</div>
+          <div id="mle-active-result" class="mle-pane-result hidden" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+  </main>
+
+  <footer class="footer footer-enterprise">
+    <div class="footer-brand">Enterprise AutoML Platform</div>
+    <div class="footer-stack">FastAPI · MLflow · LangGraph · SHAP · Evidently · Optuna</div>
+    <div class="footer-hint">MLflow UI: <code>py -3.11 -m mlflow ui --port 5000</code></div>
+  </footer>
+
+  <script src="/ui/js/app.js?v=24"></script>
+</body>
+</html>

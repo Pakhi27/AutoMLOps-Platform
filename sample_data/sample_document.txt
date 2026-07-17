@@ -1,0 +1,13 @@
+INVOICE SUMMARY - Q2 2024
+
+Vendor: Acme Cloud Services
+Contract Type: Enterprise Annual
+Total Amount: $48,500
+
+This document confirms renewal of cloud infrastructure services including compute,
+storage, and managed database instances. Payment terms are net-30.
+
+Classification: Finance / Procurement
+Department: IT Operations
+
+Key terms: auto-renewal, 99.9% SLA, dedicated support tier.

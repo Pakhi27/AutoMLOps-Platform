@@ -1,0 +1,21 @@
+timestamp,message,severity,assignment_group,resolution_group
+2024-06-01 08:12:00,Connection timeout to database server prod-db-01,high,Database Ops,Database Ops
+2024-06-01 09:45:00,API gateway returned 502 bad gateway on checkout endpoint,critical,Platform Engineering,Platform Engineering
+2024-06-01 10:30:00,User login failed invalid token signature error,medium,Identity Team,Identity Team
+2024-06-01 11:15:00,Disk usage exceeded 90 percent on app-server-03,high,Infrastructure,Infrastructure
+2024-06-01 14:20:00,Payment processor webhook delivery failed retry exhausted,critical,Payments Team,Payments Team
+2024-06-02 07:55:00,SSL certificate expiring in 7 days on api.example.com,low,Security Ops,Security Ops
+2024-06-02 09:10:00,Memory leak detected in order service pod restart required,high,Platform Engineering,Platform Engineering
+2024-06-02 12:00:00,Customer reported slow page load on dashboard,medium,Frontend Team,Frontend Team
+2024-06-02 15:30:00,Redis cache cluster node unreachable failover triggered,critical,Database Ops,Database Ops
+2024-06-03 08:00:00,Batch job ETL_daily_sales failed missing input file,medium,Data Engineering,Data Engineering
+2024-06-03 10:45:00,Unauthorized access attempt blocked from IP range,high,Security Ops,Security Ops
+2024-06-03 13:20:00,Email notification queue backlog over 10000 messages,medium,Messaging Team,Messaging Team
+2024-06-03 16:00:00,Database replication lag exceeded 5 minutes,high,Database Ops,Database Ops
+2024-06-04 09:30:00,Mobile app crash on iOS 17 during checkout flow,critical,Mobile Team,Mobile Team
+2024-06-04 11:00:00,Load balancer health check failed for backend pool,high,Infrastructure,Infrastructure
+2024-06-04 14:15:00,Scheduled maintenance window reminder sent,low,Infrastructure,Infrastructure
+2024-06-04 17:45:00,API rate limit exceeded for partner integration key,medium,Platform Engineering,Platform Engineering
+2024-06-05 08:30:00,Log aggregation pipeline dropped 2 percent of events,medium,Observability,Observability
+2024-06-05 10:00:00,Customer churn spike detected in analytics dashboard,medium,Data Science,Data Science
+2024-06-05 12:30:00,Container image vulnerability CVE-2024-1234 found in base image,high,Security Ops,Security Ops

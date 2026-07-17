@@ -1,0 +1,119 @@
+# Central configuration for the AutoMLOps platform.
+# Values here are the defaults; most can be overridden per pipeline-run request.
+
+paths:
+  upload_dir: data/uploads
+  reference_dir: data/reference
+  artifacts_dir: artifacts
+  registry_file: artifacts/registry.json
+  job_store_file: app/store/jobs.json
+
+mlflow:
+  tracking_uri: "file:./mlruns"   # overridden by MLFLOW_TRACKING_URI env var in docker-compose
+  experiment_name: "automl-platform"
+
+cleaning:
+  missing_drop_threshold: 0.9     # drop columns with > 90% missing
+  numeric_impute_strategy: median
+  categorical_impute_strategy: most_frequent
+
+outliers:
+  method: iqr                     # iqr | isolation_forest
+  iqr_multiplier: 1.5
+  action: cap                     # cap | remove
+
+feature_engineering:
+  skew_threshold: 1.0             # abs(skew) above which log1p is applied
+  onehot_max_cardinality: 10
+  freq_encode_min_cardinality: 11
+  enable_interactions: true
+  max_interactions: 3
+  enable_binning: true
+  binning_max_unique: 20
+
+modeling:
+  test_size: 0.2
+  cv_folds: 5
+  random_state: 42
+  classification_candidates:
+    - logistic_regression
+    - random_forest
+    - xgboost
+    - lightgbm
+    - catboost
+    - gradient_boosting
+    - hist_gradient_boosting
+    - svm
+    - knn
+  regression_candidates:
+    - ridge
+    - elastic_net
+    - random_forest
+    - xgboost
+    - lightgbm
+    - catboost
+    - gradient_boosting
+    - hist_gradient_boosting
+    - svm
+    - knn
+
+tuning:
+  n_trials: 25
+  timeout_seconds: 600
+
+explainability:
+  shap_sample_size: 200
+
+drift:
+  dataset_drift_share_threshold: 0.5
+
+leakage:
+  auto_drop: true
+  target_corr_threshold: 0.98
+  duplicate_corr_threshold: 0.999
+
+feature_selection:
+  enabled: true
+  method: mutual_info          # mutual_info | f_test
+  max_features: null           # null = auto (60% of features, max 50)
+
+mle:
+  active_learning_threshold: 0.55
+  counterfactual_max_changes: 3
+
+agent:
+  knowledge_dir: data/knowledge
+  enable_llm: true                 # false = advisor always uses template report (no LLM)
+  enable_web_rag: true             # Tavily + arXiv + Kaggle in advisor
+  # Chat LLM: set LLM_PROVIDER in .env (openai|gemini|groq|ollama|rules|auto)
+  relevance:
+    run_retrieval_min: 0.32        # min similarity to include a past run in RAG
+    run_compare_min: 0.48          # min similarity to suggest "compare past run"
+    max_compare_actions: 2
+    tip_min_relevance: 0.15        # min vocabulary overlap for playbook tips
+    weights:
+      task_type_match: 0.25
+      target_match: 0.30
+      feature_overlap: 0.30
+      row_bucket_match: 0.10
+      same_dataset: 0.15
+  rag:
+    top_k_per_query: 3
+    max_total: 14
+
+modalities:
+  enabled: [tabular, text, image, timeseries, logs, documents]
+  text:
+    max_tfidf_features: 8000
+    ngram_range: [1, 2]
+  timeseries:
+    lag_periods: [1, 2, 3, 7, 14]
+    rolling_window: 7
+  image:
+    resize: [64, 64]
+    max_images: 500
+  documents:
+    chunk_size: 500
+    max_chunks: 200
+  database:
+    default_limit: 100000

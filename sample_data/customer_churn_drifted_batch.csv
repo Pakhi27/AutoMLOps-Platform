@@ -1,0 +1,201 @@
+customer_id,age,tenure_months,monthly_charges,total_charges,contract,internet_service,signup_date,support_calls
+N00000,83,6,176.16,1106.57,month-to-month,Fiber optic,2024-06-01,6
+N00001,70,3,149.48,257.26,month-to-month,Fiber optic,2024-06-03,8
+N00002,77,7,121.33,808.12,month-to-month,DSL,2024-06-05,9
+N00003,71,7,137.93,998.23,month-to-month,Fiber optic,2024-06-07,13
+N00004,60,0,134.7,23.62,month-to-month,Fiber optic,2024-06-09,11
+N00005,70,3,108.04,247.64,month-to-month,DSL,2024-06-11,7
+N00006,83,6,72.01,411.71,month-to-month,Fiber optic,2024-06-13,6
+N00007,84,1,164.82,235.54,month-to-month,DSL,2024-06-15,5
+N00008,83,1,160.24,212.97,month-to-month,DSL,2024-06-17,6
+N00009,73,6,203.19,1293.54,month-to-month,Fiber optic,2024-06-19,5
+N00010,64,4,195.58,823.46,month-to-month,Fiber optic,2024-06-21,6
+N00011,72,3,157.4,463.22,month-to-month,Fiber optic,2024-06-23,9
+N00012,74,11,184.04,2077.21,month-to-month,DSL,2024-06-25,11
+N00013,63,5,211.55,1039.13,month-to-month,DSL,2024-06-27,8
+N00014,83,6,122.21,556.84,month-to-month,Fiber optic,2024-06-29,5
+N00015,71,4,139.5,585.24,month-to-month,Fiber optic,2024-07-01,9
+N00016,65,4,160.79,501.38,month-to-month,DSL,2024-07-03,5
+N00017,69,9,95.67,743.98,month-to-month,Fiber optic,2024-07-05,6
+N00018,58,5,106.64,482.37,month-to-month,DSL,2024-07-07,4
+N00019,73,3,176.45,608.18,month-to-month,Fiber optic,2024-07-09,7
+N00020,65,0,132.76,-17.46,month-to-month,Fiber optic,2024-07-11,8
+N00021,82,8,168.13,1566.3,month-to-month,Fiber optic,2024-07-13,4
+N00022,64,6,145.42,950.17,month-to-month,Fiber optic,2024-07-15,8
+N00023,62,1,199.36,210.74,month-to-month,DSL,2024-07-17,8
+N00024,73,8,160.98,1089.67,month-to-month,Fiber optic,2024-07-19,6
+N00025,64,9,155.33,1478.78,month-to-month,Fiber optic,2024-07-21,9
+N00026,65,8,138.92,1166.43,month-to-month,Fiber optic,2024-07-23,7
+N00027,66,11,109.03,1249.06,month-to-month,Fiber optic,2024-07-25,7
+N00028,75,3,88.09,280.28,month-to-month,Fiber optic,2024-07-27,6
+N00029,63,3,256.69,740.21,month-to-month,Fiber optic,2024-07-29,4
+N00030,82,9,162.61,1513.02,month-to-month,DSL,2024-07-31,6
+N00031,65,11,191.19,2013.99,month-to-month,Fiber optic,2024-08-02,12
+N00032,78,8,114.63,798.93,month-to-month,Fiber optic,2024-08-04,6
+N00033,83,7,168.8,1290.81,month-to-month,Fiber optic,2024-08-06,5
+N00034,75,3,165.27,437.94,month-to-month,Fiber optic,2024-08-08,6
+N00035,66,6,115.44,641.62,month-to-month,DSL,2024-08-10,6
+N00036,75,4,230.72,960.99,month-to-month,Fiber optic,2024-08-12,7
+N00037,78,3,209.7,806.51,month-to-month,DSL,2024-08-14,6
+N00038,77,5,143.58,908.83,month-to-month,DSL,2024-08-16,5
+N00039,56,8,194.7,1644.91,month-to-month,Fiber optic,2024-08-18,7
+N00040,57,7,197.45,1201.19,month-to-month,Fiber optic,2024-08-20,8
+N00041,63,5,173.64,1001.49,month-to-month,DSL,2024-08-22,7
+N00042,65,7,171.65,1372.62,month-to-month,DSL,2024-08-24,7
+N00043,76,7,155.83,1103.48,month-to-month,Fiber optic,2024-08-26,6
+N00044,57,3,150.44,527.03,month-to-month,Fiber optic,2024-08-28,6
+N00045,68,5,92.63,361.02,month-to-month,Fiber optic,2024-08-30,9
+N00046,78,5,133.0,597.72,month-to-month,Fiber optic,2024-09-01,6
+N00047,81,9,168.64,1508.3,month-to-month,Fiber optic,2024-09-03,7
+N00048,56,3,140.11,418.3,month-to-month,Fiber optic,2024-09-05,6
+N00049,68,6,194.23,1159.15,month-to-month,DSL,2024-09-07,9
+N00050,63,6,154.03,962.67,month-to-month,DSL,2024-09-09,8
+N00051,73,3,116.6,334.64,month-to-month,Fiber optic,2024-09-11,6
+N00052,79,9,100.05,1039.22,month-to-month,Fiber optic,2024-09-13,8
+N00053,72,3,113.0,175.94,month-to-month,Fiber optic,2024-09-15,10
+N00054,72,6,148.61,1027.29,month-to-month,DSL,2024-09-17,6
+N00055,72,6,141.47,957.58,month-to-month,Fiber optic,2024-09-19,10
+N00056,63,5,50.0,252.13,month-to-month,DSL,2024-09-21,13
+N00057,74,11,171.7,1863.19,month-to-month,Fiber optic,2024-09-23,4
+N00058,60,7,213.71,1566.92,month-to-month,DSL,2024-09-25,4
+N00059,70,1,122.24,74.83,month-to-month,Fiber optic,2024-09-27,4
+N00060,82,0,168.6,62.66,month-to-month,DSL,2024-09-29,4
+N00061,60,0,119.13,22.98,month-to-month,Fiber optic,2024-10-01,11
+N00062,57,3,202.09,521.58,month-to-month,DSL,2024-10-03,5
+N00063,57,5,118.09,742.13,month-to-month,Fiber optic,2024-10-05,12
+N00064,55,7,142.84,1082.93,month-to-month,Fiber optic,2024-10-07,7
+N00065,62,2,207.58,445.94,month-to-month,Fiber optic,2024-10-09,8
+N00066,63,2,187.45,554.86,month-to-month,Fiber optic,2024-10-11,4
+N00067,57,10,137.39,1519.68,month-to-month,Fiber optic,2024-10-13,8
+N00068,80,0,199.45,-17.09,month-to-month,Fiber optic,2024-10-15,5
+N00069,58,6,175.61,1070.69,month-to-month,Fiber optic,2024-10-17,8
+N00070,63,5,192.58,985.91,month-to-month,Fiber optic,2024-10-19,8
+N00071,63,9,211.46,1962.15,month-to-month,DSL,2024-10-21,5
+N00072,71,1,215.34,306.2,month-to-month,Fiber optic,2024-10-23,3
+N00073,72,9,114.48,1071.25,month-to-month,Fiber optic,2024-10-25,6
+N00074,67,7,116.69,834.54,month-to-month,DSL,2024-10-27,6
+N00075,65,0,171.18,-132.95,month-to-month,DSL,2024-10-29,6
+N00076,74,7,138.03,937.93,month-to-month,DSL,2024-10-31,6
+N00077,78,10,50.0,461.26,month-to-month,Fiber optic,2024-11-02,8
+N00078,68,5,189.04,931.37,month-to-month,Fiber optic,2024-11-04,7
+N00079,83,5,99.41,427.17,month-to-month,DSL,2024-11-06,5
+N00080,78,4,138.18,515.73,month-to-month,Fiber optic,2024-11-08,8
+N00081,64,2,122.67,136.5,month-to-month,Fiber optic,2024-11-10,6
+N00082,83,3,136.01,411.99,month-to-month,DSL,2024-11-12,7
+N00083,62,10,175.0,1631.42,month-to-month,Fiber optic,2024-11-14,5
+N00084,75,4,77.62,473.27,month-to-month,Fiber optic,2024-11-16,9
+N00085,75,10,137.42,1337.61,month-to-month,Fiber optic,2024-11-18,8
+N00086,64,6,88.55,673.87,month-to-month,DSL,2024-11-20,7
+N00087,72,10,136.61,1356.33,month-to-month,DSL,2024-11-22,8
+N00088,65,10,160.56,1616.79,month-to-month,Fiber optic,2024-11-24,8
+N00089,78,10,188.79,2037.39,month-to-month,Fiber optic,2024-11-26,7
+N00090,64,2,140.31,264.71,month-to-month,Fiber optic,2024-11-28,5
+N00091,73,11,249.26,2926.71,month-to-month,Fiber optic,2024-11-30,7
+N00092,70,2,187.25,303.07,month-to-month,DSL,2024-12-02,5
+N00093,63,3,199.44,648.81,month-to-month,Fiber optic,2024-12-04,5
+N00094,81,9,179.56,1681.31,month-to-month,DSL,2024-12-06,10
+N00095,82,2,139.69,292.99,month-to-month,DSL,2024-12-08,8
+N00096,70,10,130.93,1254.96,month-to-month,Fiber optic,2024-12-10,8
+N00097,72,0,113.45,146.24,month-to-month,DSL,2024-12-12,9
+N00098,63,0,151.27,-34.63,month-to-month,DSL,2024-12-14,5
+N00099,76,8,50.0,409.68,month-to-month,DSL,2024-12-16,7
+N00100,80,9,130.53,1033.71,month-to-month,Fiber optic,2024-12-18,9
+N00101,75,4,148.72,591.75,month-to-month,Fiber optic,2024-12-20,7
+N00102,68,1,94.14,-73.22,month-to-month,Fiber optic,2024-12-22,4
+N00103,78,8,107.09,977.86,month-to-month,Fiber optic,2024-12-24,6
+N00104,65,9,166.17,1554.95,month-to-month,Fiber optic,2024-12-26,7
+N00105,77,9,174.23,1712.74,month-to-month,DSL,2024-12-28,6
+N00106,60,10,162.44,1620.34,month-to-month,Fiber optic,2024-12-30,10
+N00107,67,3,59.03,287.33,month-to-month,Fiber optic,2025-01-01,8
+N00108,74,11,224.3,2616.61,month-to-month,Fiber optic,2025-01-03,6
+N00109,56,11,140.66,1451.69,month-to-month,Fiber optic,2025-01-05,9
+N00110,77,2,270.47,487.02,month-to-month,DSL,2025-01-07,9
+N00111,69,7,148.24,957.38,month-to-month,DSL,2025-01-09,8
+N00112,70,5,171.53,940.87,month-to-month,Fiber optic,2025-01-11,7
+N00113,81,10,132.05,1429.85,month-to-month,Fiber optic,2025-01-13,10
+N00114,64,1,175.4,233.67,month-to-month,Fiber optic,2025-01-15,7
+N00115,59,6,218.7,1208.37,month-to-month,Fiber optic,2025-01-17,7
+N00116,59,4,169.5,671.75,month-to-month,Fiber optic,2025-01-19,8
+N00117,78,10,190.51,1883.23,month-to-month,DSL,2025-01-21,6
+N00118,65,10,176.75,1653.36,month-to-month,Fiber optic,2025-01-23,6
+N00119,74,5,83.65,534.63,month-to-month,Fiber optic,2025-01-25,7
+N00120,56,10,175.41,1963.62,month-to-month,Fiber optic,2025-01-27,4
+N00121,76,9,122.53,1275.48,month-to-month,DSL,2025-01-29,7
+N00122,81,0,169.87,-59.21,month-to-month,Fiber optic,2025-01-31,5
+N00123,61,4,110.6,565.5,month-to-month,Fiber optic,2025-02-02,7
+N00124,81,9,203.75,1647.2,month-to-month,Fiber optic,2025-02-04,6
+N00125,57,0,128.01,-121.22,month-to-month,DSL,2025-02-06,7
+N00126,65,3,234.01,757.65,month-to-month,Fiber optic,2025-02-08,8
+N00127,63,8,135.97,1008.97,month-to-month,DSL,2025-02-10,7
+N00128,63,7,184.9,1264.13,month-to-month,Fiber optic,2025-02-12,7
+N00129,73,1,97.69,271.0,month-to-month,Fiber optic,2025-02-14,8
+N00130,77,2,157.52,296.35,month-to-month,DSL,2025-02-16,4
+N00131,66,11,120.43,1387.84,month-to-month,DSL,2025-02-18,5
+N00132,61,5,173.81,852.77,month-to-month,Fiber optic,2025-02-20,4
+N00133,62,6,208.76,1317.48,month-to-month,DSL,2025-02-22,6
+N00134,66,7,195.14,1458.06,month-to-month,DSL,2025-02-24,5
+N00135,66,4,125.64,481.0,month-to-month,DSL,2025-02-26,6
+N00136,84,6,102.55,532.63,month-to-month,DSL,2025-02-28,7
+N00137,76,9,135.59,1283.54,month-to-month,Fiber optic,2025-03-02,6
+N00138,68,11,107.78,1068.04,month-to-month,Fiber optic,2025-03-04,9
+N00139,62,11,191.56,2209.43,month-to-month,Fiber optic,2025-03-06,6
+N00140,55,8,163.8,1341.31,month-to-month,Fiber optic,2025-03-08,11
+N00141,71,4,173.54,764.76,month-to-month,Fiber optic,2025-03-10,5
+N00142,55,11,92.1,857.23,month-to-month,DSL,2025-03-12,7
+N00143,67,8,110.95,1036.76,month-to-month,Fiber optic,2025-03-14,8
+N00144,62,4,111.28,401.25,month-to-month,DSL,2025-03-16,10
+N00145,84,5,162.89,773.43,month-to-month,Fiber optic,2025-03-18,6
+N00146,84,7,164.27,971.8,month-to-month,Fiber optic,2025-03-20,4
+N00147,80,1,61.45,18.16,month-to-month,DSL,2025-03-22,6
+N00148,70,5,200.62,901.47,month-to-month,Fiber optic,2025-03-24,7
+N00149,76,2,227.76,555.86,month-to-month,Fiber optic,2025-03-26,8
+N00150,67,5,77.71,355.63,month-to-month,Fiber optic,2025-03-28,9
+N00151,71,10,114.42,1075.23,month-to-month,Fiber optic,2025-03-30,5
+N00152,57,8,180.05,1558.14,month-to-month,DSL,2025-04-01,6
+N00153,66,5,119.1,451.63,month-to-month,DSL,2025-04-03,13
+N00154,70,4,135.14,420.91,month-to-month,Fiber optic,2025-04-05,11
+N00155,75,4,141.59,495.86,month-to-month,Fiber optic,2025-04-07,6
+N00156,65,2,76.94,263.97,month-to-month,Fiber optic,2025-04-09,5
+N00157,80,3,127.07,307.36,month-to-month,DSL,2025-04-11,9
+N00158,64,2,100.32,193.02,month-to-month,DSL,2025-04-13,11
+N00159,59,4,134.68,473.53,month-to-month,Fiber optic,2025-04-15,8
+N00160,80,0,150.02,-117.06,month-to-month,Fiber optic,2025-04-17,5
+N00161,56,3,160.46,449.91,month-to-month,Fiber optic,2025-04-19,7
+N00162,67,9,153.07,1394.66,month-to-month,Fiber optic,2025-04-21,9
+N00163,68,9,120.07,940.8,month-to-month,DSL,2025-04-23,5
+N00164,55,7,158.04,1102.33,month-to-month,DSL,2025-04-25,9
+N00165,63,8,230.92,1609.09,month-to-month,DSL,2025-04-27,6
+N00166,79,0,115.07,-103.9,month-to-month,DSL,2025-04-29,11
+N00167,81,7,50.0,431.36,month-to-month,DSL,2025-05-01,8
+N00168,67,9,105.99,926.28,month-to-month,Fiber optic,2025-05-03,7
+N00169,62,9,100.42,962.53,month-to-month,Fiber optic,2025-05-05,8
+N00170,63,11,78.39,968.75,month-to-month,Fiber optic,2025-05-07,6
+N00171,82,1,126.35,188.01,month-to-month,Fiber optic,2025-05-09,7
+N00172,83,6,114.62,718.22,month-to-month,Fiber optic,2025-05-11,6
+N00173,70,10,146.44,1530.48,month-to-month,DSL,2025-05-13,4
+N00174,68,0,168.83,9.43,month-to-month,Fiber optic,2025-05-15,8
+N00175,80,2,246.81,455.93,month-to-month,DSL,2025-05-17,10
+N00176,63,0,175.34,69.84,month-to-month,Fiber optic,2025-05-19,7
+N00177,68,1,146.49,187.03,month-to-month,Fiber optic,2025-05-21,4
+N00178,68,0,68.86,15.86,month-to-month,Fiber optic,2025-05-23,11
+N00179,76,6,88.04,679.66,month-to-month,DSL,2025-05-25,4
+N00180,56,7,101.05,740.79,month-to-month,Fiber optic,2025-05-27,6
+N00181,84,4,135.66,777.44,month-to-month,Fiber optic,2025-05-29,12
+N00182,77,1,69.48,-59.46,month-to-month,Fiber optic,2025-05-31,6
+N00183,59,8,156.58,1354.19,month-to-month,Fiber optic,2025-06-02,10
+N00184,77,3,203.33,616.38,month-to-month,DSL,2025-06-04,6
+N00185,62,9,169.8,1627.31,month-to-month,Fiber optic,2025-06-06,9
+N00186,67,3,203.15,572.32,month-to-month,Fiber optic,2025-06-08,6
+N00187,70,10,138.75,1530.01,month-to-month,Fiber optic,2025-06-10,7
+N00188,75,5,170.23,977.98,month-to-month,Fiber optic,2025-06-12,7
+N00189,66,2,153.01,360.99,month-to-month,Fiber optic,2025-06-14,6
+N00190,61,1,177.09,117.41,month-to-month,DSL,2025-06-16,8
+N00191,79,7,186.97,1314.41,month-to-month,Fiber optic,2025-06-18,8
+N00192,57,10,101.73,949.18,month-to-month,Fiber optic,2025-06-20,6
+N00193,82,4,90.89,370.59,month-to-month,Fiber optic,2025-06-22,7
+N00194,80,9,107.25,812.15,month-to-month,DSL,2025-06-24,10
+N00195,72,8,191.12,1415.94,month-to-month,DSL,2025-06-26,8
+N00196,68,5,170.64,716.01,month-to-month,DSL,2025-06-28,5
+N00197,58,8,190.63,1620.92,month-to-month,Fiber optic,2025-06-30,9
+N00198,79,7,114.43,826.81,month-to-month,Fiber optic,2025-07-02,11
+N00199,66,9,153.58,1235.71,month-to-month,DSL,2025-07-04,8

@@ -1,0 +1,501 @@
+customer_id,age,tenure_months,monthly_charges,total_charges,contract,internet_service,signup_date,support_calls,churn
+C00000,18,38,69.06,999999.0,month-to-month,DSL,2019-01-01,1,no
+C00001,56,36,58.1,2107.91,month-to-month,Fiber optic,2019-01-04,3,yes
+C00002,51,66,74.19,4953.03,month-to-month,Fiber optic,2019-01-07,1,no
+C00003,21,54,43.78,2420.56,one-year,No,2019-01-10,0,yes
+C00004,69,39,54.49,2139.57,month-to-month,Fiber optic,2019-01-13,2,no
+C00005,30,35,47.2,1620.6,two-year,Fiber optic,2019-01-16,0,no
+C00006,32,64,10.87,656.34,month-to-month,Fiber optic,2019-01-19,0,yes
+C00007,28,59,76.36,4577.71,one-year,No,2019-01-22,1,no
+C00008,37,49,88.45,4433.54,one-year,Fiber optic,2019-01-25,1,no
+C00009,28,38,94.25,3745.34,month-to-month,Fiber optic,2019-01-28,2,yes
+C00010,37,7,108.98,807.81,month-to-month,DSL,2019-01-31,4,no
+C00011,64,25,93.74,2395.28,month-to-month,No,2019-02-03,0,no
+C00012,43,50,,3517.01,two-year,Fiber optic,2019-02-06,1,no
+C00013,70,58,83.57,4887.84,month-to-month,Fiber optic,2019-02-09,0,no
+C00014,43,48,56.72,2794.49,two-year,Fiber optic,2019-02-12,1,no
+C00015,33,13,89.82,1290.2,month-to-month,DSL,2019-02-15,1,no
+C00016,62,15,62.82,,one-year,Fiber optic,2019-02-18,1,no
+C00017,64,64,11.87,802.8,month-to-month,DSL,2019-02-21,0,yes
+C00018,67,25,69.21,1879.89,month-to-month,DSL,2019-02-24,1,no
+C00019,68,48,71.53,3538.17,one-year,Fiber optic,2019-02-27,3,no
+C00020,19,14,40.62,640.2,two-year,DSL,2019-03-02,1,no
+C00021,47,68,81.85,5714.81,month-to-month,DSL,2019-03-05,1,no
+C00022,33,19,99.67,2056.9,one-year,No,2019-03-08,4,yes
+C00023,31,15,41.1,732.91,month-to-month,DSL,2019-03-11,2,yes
+C00024,31,19,88.9,1751.65,month-to-month,DSL,2019-03-14,2,yes
+C00025,64,16,91.68,1545.41,two-year,Fiber optic,2019-03-17,2,no
+C00026,63,6,46.24,290.91,two-year,Fiber optic,2019-03-20,4,no
+C00027,30,32,58.92,1926.7,two-year,DSL,2019-03-23,2,no
+C00028,41,41,42.67,1726.42,two-year,DSL,2019-03-26,0,no
+C00029,60,10,55.53,555.69,two-year,No,2019-03-29,2,no
+C00030,26,33,68.75,2326.6,one-year,Fiber optic,2019-04-01,2,no
+C00031,53,2,99.16,213.68,month-to-month,DSL,2019-04-04,1,yes
+C00032,43,39,54.03,2127.53,month-to-month,DSL,2019-04-07,2,no
+C00033,70,25,31.13,749.64,month-to-month,No,2019-04-10,1,no
+C00034,60,48,10.0,532.99,month-to-month,No,2019-04-13,1,yes
+C00035,31,54,53.26,2981.63,one-year,Fiber optic,2019-04-16,1,no
+C00036,65,11,37.16,468.35,two-year,DSL,2019-04-19,1,no
+C00037,63,64,74.64,4885.34,one-year,DSL,2019-04-22,0,no
+C00038,30,56,75.74,4384.65,one-year,DSL,2019-04-25,0,no
+C00039,47,16,30.33,554.63,month-to-month,No,2019-04-28,3,no
+C00040,63,31,79.06,2553.35,two-year,Fiber optic,2019-05-01,0,no
+C00041,31,67,64.71,4322.6,month-to-month,DSL,2019-05-04,0,no
+C00042,31,63,63.67,,one-year,Fiber optic,2019-05-07,1,no
+C00043,27,5,56.99,340.04,two-year,DSL,2019-05-10,1,no
+C00044,18,64,94.01,6158.41,month-to-month,DSL,2019-05-13,1,no
+C00045,46,5,84.86,516.41,month-to-month,DSL,2019-05-16,0,yes
+C00046,18,23,74.68,1801.88,one-year,Fiber optic,2019-05-19,0,no
+C00047,51,50,98.77,4975.77,two-year,Fiber optic,2019-05-22,1,no
+C00048,41,59,70.87,4218.35,two-year,DSL,2019-05-25,3,no
+C00049,28,4,73.47,437.81,month-to-month,Fiber optic,2019-05-28,1,yes
+C00050,38,69,83.38,5818.53,one-year,Fiber optic,2019-05-31,1,no
+C00051,18,69,63.24,4411.59,month-to-month,Fiber optic,2019-06-03,1,no
+C00052,26,27,39.95,1073.86,month-to-month,DSL,2019-06-06,1,no
+C00053,44,19,114.06,,month-to-month,Fiber optic,2019-06-09,1,no
+C00054,22,7,93.58,701.76,month-to-month,Fiber optic,2019-06-12,2,no
+C00055,59,9,37.51,412.04,month-to-month,DSL,2019-06-15,2,yes
+C00056,32,4,45.42,154.38,month-to-month,Fiber optic,2019-06-18,2,yes
+C00057,70,55,43.36,2329.79,two-year,Fiber optic,2019-06-21,2,no
+C00058,27,30,31.91,995.85,two-year,Fiber optic,2019-06-24,4,no
+C00059,53,30,79.05,2426.86,one-year,Fiber optic,2019-06-27,0,no
+C00060,47,18,107.55,2097.6,month-to-month,DSL,2019-06-30,4,yes
+C00061,70,64,79.68,5211.15,month-to-month,No,2019-07-03,0,no
+C00062,53,37,108.98,4201.8,month-to-month,Fiber optic,2019-07-06,1,no
+C00063,67,35,59.54,2139.1,two-year,DSL,2019-07-09,2,no
+C00064,44,27,76.57,2136.66,two-year,DSL,2019-07-12,4,no
+C00065,30,0,46.83,38.77,two-year,DSL,2019-07-15,1,no
+C00066,28,11,70.54,958.71,two-year,Fiber optic,2019-07-18,2,no
+C00067,67,11,96.85,1138.8,one-year,Fiber optic,2019-07-21,1,no
+C00068,29,30,87.84,2784.93,one-year,Fiber optic,2019-07-24,2,no
+C00069,59,7,95.51,675.05,month-to-month,Fiber optic,2019-07-27,1,no
+C00070,48,64,59.81,3781.15,one-year,No,2019-07-30,1,no
+C00071,33,13,92.82,1296.64,month-to-month,DSL,2019-08-02,1,no
+C00072,41,41,106.26,4417.73,month-to-month,DSL,2019-08-05,4,yes
+C00073,63,19,84.09,1571.21,month-to-month,No,2019-08-08,0,yes
+C00074,43,6,35.25,340.25,month-to-month,No,2019-08-11,3,yes
+C00075,67,5,77.06,522.76,month-to-month,DSL,2019-08-14,1,yes
+C00076,71,34,76.11,2718.76,month-to-month,Fiber optic,2019-08-17,1,no
+C00077,35,63,53.2,3414.49,month-to-month,DSL,2019-08-20,0,no
+C00078,47,52,44.23,2386.36,month-to-month,No,2019-08-23,0,no
+C00079,48,48,49.69,2395.72,two-year,DSL,2019-08-26,1,no
+C00080,48,45,98.72,4556.51,month-to-month,DSL,2019-08-29,1,no
+C00081,22,31,73.33,2363.57,month-to-month,DSL,2019-09-01,4,yes
+C00082,39,50,111.77,5771.17,month-to-month,DSL,2019-09-04,0,yes
+C00083,51,64,25.08,1664.93,two-year,No,2019-09-07,0,no
+C00084,70,38,80.56,3104.67,month-to-month,DSL,2019-09-10,1,yes
+C00085,31,44,110.0,4909.79,one-year,Fiber optic,2019-09-13,3,no
+C00086,54,13,115.78,1704.86,two-year,Fiber optic,2019-09-16,1,no
+C00087,61,49,56.52,2784.93,one-year,Fiber optic,2019-09-19,0,no
+C00088,70,7,109.78,831.93,month-to-month,No,2019-09-22,0,no
+C00089,27,51,97.35,5075.98,month-to-month,No,2019-09-25,3,yes
+C00090,56,71,99.56,7087.93,one-year,Fiber optic,2019-09-28,3,no
+C00091,35,31,75.35,2337.79,month-to-month,Fiber optic,2019-10-01,2,no
+C00092,43,37,95.25,3656.62,one-year,DSL,2019-10-04,2,no
+C00093,18,21,92.88,2072.15,month-to-month,Fiber optic,2019-10-07,2,yes
+C00094,59,54,54.94,3044.49,month-to-month,DSL,2019-10-10,2,yes
+C00095,19,63,10.0,758.29,month-to-month,DSL,2019-10-13,0,yes
+C00096,39,11,98.55,1222.26,one-year,DSL,2019-10-16,0,no
+C00097,46,26,96.67,2667.24,two-year,Fiber optic,2019-10-19,3,no
+C00098,56,26,88.81,2342.29,month-to-month,DSL,2019-10-22,3,no
+C00099,44,31,60.14,1910.0,two-year,No,2019-10-25,0,no
+C00100,65,1,60.1,71.34,one-year,Fiber optic,2019-10-28,2,yes
+C00101,25,19,30.91,632.69,month-to-month,Fiber optic,2019-10-31,2,no
+C00102,32,35,110.84,4012.23,two-year,DSL,2019-11-03,1,no
+C00103,32,39,68.18,2705.0,month-to-month,Fiber optic,2019-11-06,2,yes
+C00104,39,55,91.41,5117.44,one-year,No,2019-11-09,1,no
+C00105,18,38,61.63,2438.14,month-to-month,Fiber optic,2019-11-12,3,no
+C00106,42,3,11.56,63.35,one-year,Fiber optic,2019-11-15,1,no
+C00107,39,31,90.21,2920.53,one-year,Fiber optic,2019-11-18,1,no
+C00108,51,31,100.84,3221.33,one-year,No,2019-11-21,1,no
+C00109,50,25,116.95,3005.16,two-year,Fiber optic,2019-11-24,1,no
+C00110,34,20,67.65,1370.66,one-year,Fiber optic,2019-11-27,1,no
+C00111,42,39,58.54,2297.47,one-year,Fiber optic,2019-11-30,5,no
+C00112,46,33,74.28,2555.97,month-to-month,Fiber optic,2019-12-03,1,no
+C00113,65,27,44.45,1269.28,month-to-month,Fiber optic,2019-12-06,2,no
+C00114,22,70,48.55,3433.42,one-year,DSL,2019-12-09,1,no
+C00115,53,56,85.73,4892.71,one-year,Fiber optic,2019-12-12,3,no
+C00116,22,10,64.53,632.05,month-to-month,DSL,2019-12-15,2,no
+C00117,33,11,57.14,691.25,month-to-month,DSL,2019-12-18,2,no
+C00118,43,19,80.1,1617.76,two-year,No,2019-12-21,1,no
+C00119,64,51,61.62,3155.53,month-to-month,Fiber optic,2019-12-24,0,yes
+C00120,37,14,130.53,1980.93,month-to-month,No,2019-12-27,1,yes
+C00121,46,15,62.98,956.12,two-year,Fiber optic,2019-12-30,0,no
+C00122,50,71,109.08,7882.5,month-to-month,DSL,2020-01-02,3,no
+C00123,61,67,87.78,5973.31,month-to-month,DSL,2020-01-05,1,no
+C00124,40,50,94.59,4868.57,two-year,DSL,2020-01-08,0,no
+C00125,50,27,79.19,2260.21,month-to-month,DSL,2020-01-11,3,yes
+C00126,65,46,66.56,3202.83,month-to-month,No,2020-01-14,2,no
+C00127,42,23,70.27,1666.41,month-to-month,DSL,2020-01-17,2,yes
+C00128,71,1,55.13,153.09,month-to-month,DSL,2020-01-20,1,yes
+C00129,40,64,79.51,5153.34,two-year,No,2020-01-23,2,no
+C00130,42,71,94.48,6805.88,month-to-month,DSL,2020-01-26,2,no
+C00131,19,3,10.0,35.27,one-year,DSL,2020-01-29,1,yes
+C00132,48,40,38.48,,month-to-month,No,2020-02-01,2,yes
+C00133,44,70,40.18,2863.09,month-to-month,No,2020-02-04,2,no
+C00134,41,58,86.34,5154.85,one-year,Fiber optic,2020-02-07,0,no
+C00135,53,66,85.64,5724.56,month-to-month,Fiber optic,2020-02-10,2,yes
+C00136,49,57,59.68,3516.75,two-year,DSL,2020-02-13,2,no
+C00137,71,47,107.63,5035.56,one-year,DSL,2020-02-16,3,no
+C00138,41,36,60.49,2319.9,month-to-month,DSL,2020-02-19,1,no
+C00139,42,41,83.48,3448.74,month-to-month,No,2020-02-22,1,no
+C00140,64,1,89.91,203.12,month-to-month,Fiber optic,2020-02-25,2,yes
+C00141,45,37,65.9,2576.35,one-year,Fiber optic,2020-02-28,1,yes
+C00142,32,2,95.95,215.32,two-year,Fiber optic,2020-03-02,1,no
+C00143,47,6,60.68,444.17,one-year,DSL,2020-03-05,2,no
+C00144,46,59,69.43,4234.16,one-year,Fiber optic,2020-03-08,1,no
+C00145,41,6,72.67,514.98,month-to-month,DSL,2020-03-11,2,no
+C00146,48,40,88.8,3635.62,month-to-month,DSL,2020-03-14,2,no
+C00147,50,49,105.83,5293.23,month-to-month,Fiber optic,2020-03-17,2,no
+C00148,73,1,50.91,115.07,one-year,DSL,2020-03-20,0,yes
+C00149,22,68,35.36,,one-year,Fiber optic,2020-03-23,2,no
+C00150,70,29,86.47,2622.69,one-year,DSL,2020-03-26,2,no
+C00151,45,36,17.45,614.82,month-to-month,Fiber optic,2020-03-29,0,no
+C00152,39,67,71.14,4816.7,month-to-month,No,2020-04-01,0,yes
+C00153,52,0,84.36,130.65,month-to-month,No,2020-04-04,0,yes
+C00154,24,8,26.02,307.64,one-year,DSL,2020-04-07,1,no
+C00155,60,59,48.87,2928.59,two-year,DSL,2020-04-10,0,no
+C00156,23,22,62.17,,one-year,Fiber optic,2020-04-13,3,no
+C00157,42,59,66.96,4042.14,month-to-month,Fiber optic,2020-04-16,0,yes
+C00158,29,66,69.81,4727.98,month-to-month,DSL,2020-04-19,1,no
+C00159,35,24,79.89,2007.04,month-to-month,No,2020-04-22,3,no
+C00160,44,0,87.22,95.45,month-to-month,DSL,2020-04-25,2,yes
+C00161,18,48,30.37,1535.56,two-year,Fiber optic,2020-04-28,2,no
+C00162,68,57,101.11,5890.42,two-year,No,2020-05-01,3,no
+C00163,61,10,62.74,745.55,one-year,DSL,2020-05-04,1,no
+C00164,72,18,59.48,1136.55,month-to-month,DSL,2020-05-07,1,no
+C00165,22,11,97.72,1163.87,month-to-month,DSL,2020-05-10,0,yes
+C00166,28,43,56.47,2471.93,two-year,Fiber optic,2020-05-13,0,no
+C00167,45,51,48.02,2438.34,month-to-month,Fiber optic,2020-05-16,1,no
+C00168,66,2,22.74,97.36,month-to-month,No,2020-05-19,2,yes
+C00169,35,36,101.44,3728.97,two-year,No,2020-05-22,0,no
+C00170,35,52,25.34,1420.26,month-to-month,DSL,2020-05-25,2,yes
+C00171,65,42,37.05,1549.04,two-year,DSL,2020-05-28,1,no
+C00172,18,70,16.76,1191.02,month-to-month,No,2020-05-31,0,no
+C00173,72,37,59.99,2239.93,month-to-month,DSL,2020-06-03,1,yes
+C00174,28,67,23.27,1580.75,month-to-month,No,2020-06-06,1,yes
+C00175,36,67,99.32,6703.09,month-to-month,Fiber optic,2020-06-09,1,no
+C00176,36,12,52.78,634.88,month-to-month,Fiber optic,2020-06-12,3,yes
+C00177,69,56,40.8,2319.62,one-year,No,2020-06-15,1,no
+C00178,64,44,79.41,3603.67,month-to-month,Fiber optic,2020-06-18,0,no
+C00179,37,64,43.05,2879.14,month-to-month,Fiber optic,2020-06-21,1,no
+C00180,37,17,66.84,1277.0,month-to-month,No,2020-06-24,2,no
+C00181,64,20,92.74,1886.12,two-year,DSL,2020-06-27,2,no
+C00182,34,29,49.89,,month-to-month,No,2020-06-30,1,yes
+C00183,63,70,60.72,4412.35,month-to-month,Fiber optic,2020-07-03,1,no
+C00184,64,71,51.48,3680.61,month-to-month,Fiber optic,2020-07-06,1,yes
+C00185,55,58,62.19,3655.96,one-year,No,2020-07-09,3,no
+C00186,60,3,,559.44,month-to-month,Fiber optic,2020-07-12,3,yes
+C00187,31,7,16.7,161.68,month-to-month,DSL,2020-07-15,2,yes
+C00188,50,48,92.83,4597.87,month-to-month,Fiber optic,2020-07-18,4,yes
+C00189,25,6,71.46,508.15,one-year,Fiber optic,2020-07-21,1,no
+C00190,21,69,52.59,3647.95,month-to-month,DSL,2020-07-24,1,no
+C00191,42,13,95.43,1379.79,one-year,DSL,2020-07-27,0,yes
+C00192,34,67,101.27,6896.18,month-to-month,DSL,2020-07-30,1,yes
+C00193,26,24,47.52,,two-year,Fiber optic,2020-08-02,0,no
+C00194,47,18,67.81,1243.72,month-to-month,DSL,2020-08-05,2,no
+C00195,67,15,54.77,939.94,month-to-month,DSL,2020-08-08,2,no
+C00196,32,55,81.3,4624.6,month-to-month,DSL,2020-08-11,1,no
+C00197,28,3,74.49,297.71,month-to-month,No,2020-08-14,3,yes
+C00198,67,42,69.58,3032.58,one-year,DSL,2020-08-17,0,yes
+C00199,19,32,80.8,2714.48,month-to-month,DSL,2020-08-20,0,no
+C00200,51,39,82.8,3295.81,month-to-month,DSL,2020-08-23,2,no
+C00201,49,18,107.2,2023.34,month-to-month,Fiber optic,2020-08-26,1,no
+C00202,44,4,48.48,266.48,month-to-month,No,2020-08-29,1,yes
+C00203,42,33,68.41,2362.75,two-year,No,2020-09-01,4,no
+C00204,19,22,131.25,2971.13,two-year,Fiber optic,2020-09-04,1,no
+C00205,66,56,,3071.78,one-year,Fiber optic,2020-09-07,0,no
+C00206,21,24,100.84,2558.45,two-year,Fiber optic,2020-09-10,1,no
+C00207,27,23,45.58,,month-to-month,Fiber optic,2020-09-13,4,no
+C00208,68,27,88.22,2458.01,month-to-month,DSL,2020-09-16,3,no
+C00209,38,2,65.71,161.04,month-to-month,DSL,2020-09-19,1,yes
+C00210,44,35,80.31,2866.14,month-to-month,Fiber optic,2020-09-22,4,no
+C00211,54,60,62.77,3808.51,month-to-month,DSL,2020-09-25,4,yes
+C00212,50,36,102.48,3786.34,two-year,DSL,2020-09-28,1,no
+C00213,71,35,69.12,2422.49,month-to-month,Fiber optic,2020-10-01,1,yes
+C00214,71,35,65.88,2411.29,month-to-month,DSL,2020-10-04,2,no
+C00215,32,17,81.98,1369.78,month-to-month,Fiber optic,2020-10-07,2,no
+C00216,61,7,52.34,336.26,one-year,Fiber optic,2020-10-10,0,no
+C00217,57,66,11.57,744.95,month-to-month,DSL,2020-10-13,1,no
+C00218,32,56,32.5,1882.28,month-to-month,DSL,2020-10-16,1,yes
+C00219,26,52,52.1,2722.35,month-to-month,DSL,2020-10-19,2,yes
+C00220,64,4,113.04,583.4,month-to-month,Fiber optic,2020-10-22,1,no
+C00221,60,30,127.07,3942.25,two-year,Fiber optic,2020-10-25,1,no
+C00222,39,0,36.43,-48.78,month-to-month,Fiber optic,2020-10-28,1,yes
+C00223,34,24,74.13,1915.06,month-to-month,Fiber optic,2020-10-31,1,no
+C00224,57,7,53.06,416.67,two-year,No,2020-11-03,0,no
+C00225,31,5,76.39,,month-to-month,DSL,2020-11-06,2,yes
+C00226,44,33,37.97,1219.8,one-year,No,2020-11-09,1,no
+C00227,31,20,79.07,1654.74,month-to-month,Fiber optic,2020-11-12,0,no
+C00228,53,70,50.1,3600.77,one-year,DSL,2020-11-15,1,no
+C00229,39,51,40.26,,month-to-month,Fiber optic,2020-11-18,3,no
+C00230,55,25,53.64,1350.96,one-year,Fiber optic,2020-11-21,2,no
+C00231,36,5,19.66,115.2,month-to-month,DSL,2020-11-24,1,yes
+C00232,53,46,86.94,4084.63,month-to-month,DSL,2020-11-27,0,yes
+C00233,52,27,48.61,1405.92,month-to-month,Fiber optic,2020-11-30,1,yes
+C00234,43,27,107.47,3065.43,two-year,DSL,2020-12-03,0,no
+C00235,49,42,91.02,3972.71,month-to-month,Fiber optic,2020-12-06,0,no
+C00236,28,29,101.0,3032.28,one-year,DSL,2020-12-09,0,no
+C00237,60,53,59.97,3326.99,one-year,Fiber optic,2020-12-12,1,no
+C00238,59,63,103.39,6517.77,two-year,DSL,2020-12-15,1,no
+C00239,34,53,103.27,5609.05,month-to-month,DSL,2020-12-18,1,yes
+C00240,42,70,60.36,4269.31,two-year,No,2020-12-21,0,no
+C00241,72,21,71.96,1494.99,two-year,DSL,2020-12-24,1,no
+C00242,25,21,106.75,2300.78,two-year,Fiber optic,2020-12-27,0,no
+C00243,48,23,74.4,1797.5,one-year,Fiber optic,2020-12-30,2,no
+C00244,48,13,52.5,747.86,month-to-month,DSL,2021-01-02,3,no
+C00245,56,11,97.62,1151.59,month-to-month,Fiber optic,2021-01-05,0,yes
+C00246,43,13,100.82,1424.35,one-year,Fiber optic,2021-01-08,4,no
+C00247,57,52,47.94,2513.75,month-to-month,DSL,2021-01-11,1,no
+C00248,24,36,81.51,3050.02,one-year,No,2021-01-14,1,no
+C00249,26,19,70.96,1435.21,month-to-month,DSL,2021-01-17,1,yes
+C00250,48,47,98.84,4689.76,month-to-month,Fiber optic,2021-01-20,1,no
+C00251,26,34,51.78,1821.66,two-year,DSL,2021-01-23,1,no
+C00252,19,0,103.68,145.55,month-to-month,DSL,2021-01-26,1,yes
+C00253,44,64,93.8,6061.85,month-to-month,Fiber optic,2021-01-29,1,no
+C00254,57,27,60.99,1637.45,month-to-month,No,2021-02-01,2,no
+C00255,47,0,,33.55,month-to-month,Fiber optic,2021-02-04,3,yes
+C00256,67,13,40.83,604.0,one-year,Fiber optic,2021-02-07,1,no
+C00257,33,61,106.24,6564.47,two-year,Fiber optic,2021-02-10,1,no
+C00258,43,46,46.05,2198.61,month-to-month,Fiber optic,2021-02-13,4,yes
+C00259,28,53,65.62,3464.93,two-year,DSL,2021-02-16,0,no
+C00260,32,23,118.43,2794.44,one-year,DSL,2021-02-19,1,no
+C00261,46,46,90.65,,month-to-month,DSL,2021-02-22,0,no
+C00262,52,22,78.36,1816.47,one-year,Fiber optic,2021-02-25,3,no
+C00263,55,29,76.95,2295.31,one-year,No,2021-02-28,2,no
+C00264,32,12,65.48,819.01,month-to-month,Fiber optic,2021-03-03,2,no
+C00265,31,44,35.7,1651.33,two-year,Fiber optic,2021-03-06,4,no
+C00266,41,43,85.1,3731.96,month-to-month,No,2021-03-09,1,no
+C00267,30,68,42.01,2977.93,month-to-month,DSL,2021-03-12,3,yes
+C00268,30,48,124.62,6105.96,one-year,DSL,2021-03-15,0,no
+C00269,72,6,29.62,208.52,month-to-month,DSL,2021-03-18,0,yes
+C00270,37,19,63.29,1240.66,one-year,Fiber optic,2021-03-21,0,no
+C00271,59,4,71.37,413.02,month-to-month,No,2021-03-24,1,yes
+C00272,36,20,55.31,1094.05,two-year,DSL,2021-03-27,0,no
+C00273,19,24,71.43,1824.33,month-to-month,Fiber optic,2021-03-30,1,no
+C00274,20,67,88.06,5969.8,month-to-month,No,2021-04-02,4,yes
+C00275,73,7,107.38,799.66,month-to-month,DSL,2021-04-05,3,no
+C00276,38,37,74.52,2842.27,month-to-month,Fiber optic,2021-04-08,0,no
+C00277,18,66,70.63,4688.23,two-year,Fiber optic,2021-04-11,2,no
+C00278,39,22,80.07,1908.15,one-year,Fiber optic,2021-04-14,1,no
+C00279,33,56,72.11,4081.43,month-to-month,Fiber optic,2021-04-17,2,no
+C00280,56,23,52.08,1193.83,month-to-month,No,2021-04-20,1,yes
+C00281,70,11,71.02,790.19,one-year,Fiber optic,2021-04-23,2,no
+C00282,68,42,102.3,4476.99,one-year,DSL,2021-04-26,1,no
+C00283,22,26,73.58,1997.49,month-to-month,DSL,2021-04-29,0,no
+C00284,18,0,70.96,47.48,two-year,No,2021-05-02,0,no
+C00285,66,29,67.55,2061.27,month-to-month,No,2021-05-05,0,yes
+C00286,28,28,85.42,2474.49,one-year,Fiber optic,2021-05-08,2,no
+C00287,26,68,81.41,5615.03,month-to-month,No,2021-05-11,0,yes
+C00288,71,61,82.28,5151.21,month-to-month,Fiber optic,2021-05-14,3,yes
+C00289,28,23,62.67,1541.35,month-to-month,DSL,2021-05-17,4,yes
+C00290,66,53,11.65,548.78,month-to-month,No,2021-05-20,2,yes
+C00291,62,34,55.06,1930.02,month-to-month,Fiber optic,2021-05-23,4,yes
+C00292,29,65,69.73,4646.54,one-year,No,2021-05-26,2,no
+C00293,69,38,47.66,1875.06,two-year,DSL,2021-05-29,0,no
+C00294,53,6,87.78,622.47,month-to-month,Fiber optic,2021-06-01,3,no
+C00295,44,56,48.01,2632.41,month-to-month,No,2021-06-04,2,yes
+C00296,45,48,14.8,779.44,one-year,DSL,2021-06-07,1,no
+C00297,20,62,91.36,5721.58,month-to-month,Fiber optic,2021-06-10,3,no
+C00298,67,51,64.64,3362.67,one-year,No,2021-06-13,1,no
+C00299,35,48,70.65,3505.03,one-year,Fiber optic,2021-06-16,3,no
+C00300,33,25,25.72,,month-to-month,DSL,2021-06-19,1,no
+C00301,18,26,61.42,1619.57,month-to-month,Fiber optic,2021-06-22,0,yes
+C00302,32,27,66.74,1890.92,month-to-month,No,2021-06-25,1,yes
+C00303,37,16,72.19,1206.17,one-year,DSL,2021-06-28,0,no
+C00304,20,50,93.14,4746.59,month-to-month,Fiber optic,2021-07-01,2,no
+C00305,55,28,54.34,1580.79,month-to-month,Fiber optic,2021-07-04,0,yes
+C00306,26,69,64.61,4578.65,month-to-month,Fiber optic,2021-07-07,0,yes
+C00307,33,41,113.15,4730.51,month-to-month,No,2021-07-10,3,yes
+C00308,45,21,66.65,1548.19,one-year,DSL,2021-07-13,2,no
+C00309,55,55,106.67,5992.34,month-to-month,DSL,2021-07-16,0,no
+C00310,28,32,26.38,754.51,one-year,Fiber optic,2021-07-19,0,no
+C00311,70,69,65.96,4616.02,month-to-month,Fiber optic,2021-07-22,1,no
+C00312,47,57,101.48,5801.21,one-year,DSL,2021-07-25,1,no
+C00313,44,62,88.01,5562.76,one-year,DSL,2021-07-28,0,no
+C00314,60,69,108.69,7609.74,month-to-month,Fiber optic,2021-07-31,4,no
+C00315,29,56,61.23,3492.04,two-year,DSL,2021-08-03,5,no
+C00316,34,67,73.83,5132.71,month-to-month,DSL,2021-08-06,4,no
+C00317,70,64,11.05,699.46,month-to-month,Fiber optic,2021-08-09,1,no
+C00318,58,10,35.06,407.99,one-year,Fiber optic,2021-08-12,4,yes
+C00319,71,50,83.64,4423.62,month-to-month,No,2021-08-15,1,yes
+C00320,53,40,54.6,2295.56,month-to-month,DSL,2021-08-18,1,yes
+C00321,25,68,91.7,6343.38,month-to-month,DSL,2021-08-21,1,no
+C00322,61,54,62.7,3475.19,two-year,DSL,2021-08-24,0,no
+C00323,69,36,84.04,3101.71,month-to-month,Fiber optic,2021-08-27,2,no
+C00324,25,45,49.09,2301.89,month-to-month,Fiber optic,2021-08-30,2,no
+C00325,34,6,43.94,250.43,two-year,No,2021-09-02,3,no
+C00326,62,25,97.6,2547.61,month-to-month,Fiber optic,2021-09-05,2,yes
+C00327,25,52,84.59,4448.84,two-year,Fiber optic,2021-09-08,1,no
+C00328,73,30,70.52,2211.89,one-year,Fiber optic,2021-09-11,2,no
+C00329,24,68,91.46,6379.08,two-year,No,2021-09-14,0,no
+C00330,19,47,92.79,4389.87,month-to-month,DSL,2021-09-17,0,yes
+C00331,61,2,99.06,301.11,month-to-month,Fiber optic,2021-09-20,0,yes
+C00332,18,11,62.06,768.84,month-to-month,DSL,2021-09-23,1,no
+C00333,23,44,51.56,2291.91,one-year,Fiber optic,2021-09-26,1,no
+C00334,56,57,71.46,,month-to-month,DSL,2021-09-29,1,no
+C00335,61,21,79.13,1781.28,one-year,DSL,2021-10-02,5,yes
+C00336,68,28,37.02,1088.34,two-year,Fiber optic,2021-10-05,1,no
+C00337,31,29,14.55,414.61,two-year,No,2021-10-08,0,no
+C00338,64,17,80.46,1500.68,one-year,DSL,2021-10-11,2,no
+C00339,41,66,101.08,6855.52,one-year,Fiber optic,2021-10-14,3,no
+C00340,62,36,73.43,2728.17,month-to-month,DSL,2021-10-17,0,no
+C00341,26,24,63.81,1652.02,month-to-month,DSL,2021-10-20,0,yes
+C00342,59,67,74.89,5111.24,one-year,No,2021-10-23,2,no
+C00343,55,45,75.58,3415.53,month-to-month,Fiber optic,2021-10-26,3,yes
+C00344,41,0,44.87,89.3,month-to-month,Fiber optic,2021-10-29,2,yes
+C00345,44,30,77.16,2452.39,month-to-month,Fiber optic,2021-11-01,1,no
+C00346,27,48,99.98,4965.47,month-to-month,Fiber optic,2021-11-04,0,no
+C00347,40,66,80.37,5381.67,month-to-month,DSL,2021-11-07,1,no
+C00348,52,37,66.73,2673.44,month-to-month,Fiber optic,2021-11-10,1,no
+C00349,63,26,89.23,2443.52,one-year,No,2021-11-13,1,no
+C00350,52,23,85.58,2057.22,two-year,DSL,2021-11-16,2,no
+C00351,44,7,44.64,298.12,month-to-month,DSL,2021-11-19,1,yes
+C00352,58,6,102.95,679.27,two-year,Fiber optic,2021-11-22,0,no
+C00353,57,30,90.94,2789.5,month-to-month,Fiber optic,2021-11-25,0,yes
+C00354,71,56,78.95,4438.65,one-year,No,2021-11-28,0,no
+C00355,62,29,82.13,2552.78,month-to-month,Fiber optic,2021-12-01,0,yes
+C00356,22,10,76.06,876.91,month-to-month,DSL,2021-12-04,1,yes
+C00357,53,63,51.9,3217.58,month-to-month,DSL,2021-12-07,0,no
+C00358,58,58,86.52,5108.54,one-year,DSL,2021-12-10,1,no
+C00359,72,23,71.42,1729.91,month-to-month,DSL,2021-12-13,0,yes
+C00360,61,24,98.62,2469.05,month-to-month,DSL,2021-12-16,2,yes
+C00361,49,21,57.3,1400.04,two-year,Fiber optic,2021-12-19,0,no
+C00362,20,10,51.25,531.38,month-to-month,No,2021-12-22,2,no
+C00363,30,29,48.44,1538.3,two-year,DSL,2021-12-25,0,no
+C00364,61,34,96.51,3373.48,two-year,DSL,2021-12-28,2,no
+C00365,48,49,69.38,3583.38,month-to-month,DSL,2021-12-31,2,yes
+C00366,57,12,56.7,,month-to-month,No,2022-01-03,2,no
+C00367,31,30,38.71,1212.48,month-to-month,No,2022-01-06,0,no
+C00368,63,0,134.09,,month-to-month,DSL,2022-01-09,1,yes
+C00369,22,37,72.77,2796.47,month-to-month,Fiber optic,2022-01-12,2,yes
+C00370,73,29,54.61,1580.85,one-year,Fiber optic,2022-01-15,0,no
+C00371,61,51,58.59,2958.52,one-year,Fiber optic,2022-01-18,1,no
+C00372,57,41,99.56,4142.58,month-to-month,Fiber optic,2022-01-21,3,yes
+C00373,33,1,63.1,66.08,month-to-month,Fiber optic,2022-01-24,1,yes
+C00374,63,9,43.38,365.86,month-to-month,No,2022-01-27,1,no
+C00375,35,9,67.98,766.06,month-to-month,DSL,2022-01-30,1,no
+C00376,66,59,111.09,6665.67,two-year,DSL,2022-02-02,1,no
+C00377,74,52,101.48,5332.36,month-to-month,Fiber optic,2022-02-05,4,yes
+C00378,66,11,103.34,1183.13,month-to-month,DSL,2022-02-08,1,no
+C00379,40,65,53.35,3451.92,one-year,Fiber optic,2022-02-11,0,no
+C00380,69,38,34.17,1360.58,month-to-month,Fiber optic,2022-02-14,1,no
+C00381,43,62,60.69,,two-year,Fiber optic,2022-02-17,0,no
+C00382,64,14,59.78,856.48,one-year,Fiber optic,2022-02-20,1,no
+C00383,70,50,70.24,3667.28,one-year,Fiber optic,2022-02-23,3,no
+C00384,39,46,93.12,4331.38,one-year,DSL,2022-02-26,2,no
+C00385,63,70,56.1,3951.11,month-to-month,Fiber optic,2022-03-01,2,no
+C00386,74,30,50.83,1586.33,month-to-month,Fiber optic,2022-03-04,1,yes
+C00387,66,61,42.73,2595.65,month-to-month,No,2022-03-07,1,yes
+C00388,29,4,88.35,463.32,month-to-month,DSL,2022-03-10,4,yes
+C00389,44,49,80.35,3945.86,one-year,Fiber optic,2022-03-13,2,no
+C00390,43,40,92.5,3749.9,month-to-month,Fiber optic,2022-03-16,0,yes
+C00391,30,46,38.01,1865.99,one-year,Fiber optic,2022-03-19,2,no
+C00392,30,57,58.08,3377.14,two-year,No,2022-03-22,2,no
+C00393,21,61,102.26,6361.08,month-to-month,Fiber optic,2022-03-25,2,no
+C00394,57,5,80.15,454.37,two-year,DSL,2022-03-28,1,no
+C00395,22,63,99.56,6413.52,month-to-month,Fiber optic,2022-03-31,4,yes
+C00396,25,33,94.14,3194.69,month-to-month,Fiber optic,2022-04-03,3,no
+C00397,25,19,88.4,1716.29,one-year,DSL,2022-04-06,1,no
+C00398,47,4,54.73,350.1,one-year,DSL,2022-04-09,1,yes
+C00399,33,61,67.17,4180.03,one-year,Fiber optic,2022-04-12,1,no
+C00400,43,51,77.95,4109.52,one-year,No,2022-04-15,0,no
+C00401,62,42,128.74,5524.73,month-to-month,Fiber optic,2022-04-18,2,yes
+C00402,38,3,88.55,310.72,month-to-month,DSL,2022-04-21,1,yes
+C00403,31,0,67.65,90.92,month-to-month,No,2022-04-24,3,yes
+C00404,22,21,74.66,1667.06,month-to-month,DSL,2022-04-27,2,yes
+C00405,42,14,80.83,1237.99,month-to-month,No,2022-04-30,1,no
+C00406,64,54,65.2,3620.58,month-to-month,No,2022-05-03,4,yes
+C00407,44,56,88.34,5000.09,one-year,Fiber optic,2022-05-06,3,no
+C00408,33,14,97.56,1560.18,month-to-month,Fiber optic,2022-05-09,0,no
+C00409,35,24,131.61,3325.14,month-to-month,Fiber optic,2022-05-12,1,no
+C00410,18,4,108.21,585.42,one-year,Fiber optic,2022-05-15,0,no
+C00411,28,60,77.92,4659.13,month-to-month,Fiber optic,2022-05-18,0,no
+C00412,23,2,54.65,84.92,one-year,DSL,2022-05-21,1,no
+C00413,33,43,39.94,1706.01,month-to-month,Fiber optic,2022-05-24,0,no
+C00414,71,44,95.01,4192.49,month-to-month,DSL,2022-05-27,3,yes
+C00415,66,71,100.88,7248.56,one-year,Fiber optic,2022-05-30,0,no
+C00416,61,32,107.53,3569.13,one-year,No,2022-06-02,3,no
+C00417,74,54,78.21,4315.63,month-to-month,DSL,2022-06-05,2,no
+C00418,35,19,70.88,1453.82,two-year,Fiber optic,2022-06-08,1,no
+C00419,39,6,68.44,606.15,month-to-month,DSL,2022-06-11,0,no
+C00420,20,59,91.06,5402.32,one-year,Fiber optic,2022-06-14,0,no
+C00421,44,60,18.82,1105.63,month-to-month,Fiber optic,2022-06-17,3,no
+C00422,47,66,26.76,1847.57,month-to-month,DSL,2022-06-20,0,yes
+C00423,37,47,10.0,450.49,month-to-month,DSL,2022-06-23,2,no
+C00424,56,8,59.13,464.63,month-to-month,Fiber optic,2022-06-26,3,yes
+C00425,38,15,67.08,1029.9,month-to-month,DSL,2022-06-29,2,yes
+C00426,43,40,100.08,,one-year,DSL,2022-07-02,3,no
+C00427,57,37,71.25,2711.3,month-to-month,DSL,2022-07-05,2,no
+C00428,57,6,83.4,584.54,month-to-month,No,2022-07-08,4,yes
+C00429,59,11,67.14,822.84,two-year,DSL,2022-07-11,3,no
+C00430,57,44,57.84,2624.28,month-to-month,Fiber optic,2022-07-14,1,yes
+C00431,36,26,42.69,1091.74,month-to-month,Fiber optic,2022-07-17,1,no
+C00432,30,65,76.41,5011.1,two-year,No,2022-07-20,3,no
+C00433,26,53,69.27,3776.76,month-to-month,Fiber optic,2022-07-23,2,no
+C00434,36,33,43.62,1502.79,two-year,Fiber optic,2022-07-26,3,no
+C00435,58,32,56.08,1785.55,two-year,No,2022-07-29,1,no
+C00436,66,7,43.31,339.87,month-to-month,DSL,2022-08-01,2,no
+C00437,43,47,48.77,2351.32,month-to-month,DSL,2022-08-04,2,yes
+C00438,22,58,101.13,5900.93,one-year,DSL,2022-08-07,1,no
+C00439,70,64,79.42,5016.41,month-to-month,Fiber optic,2022-08-10,0,yes
+C00440,65,17,83.19,1448.86,month-to-month,No,2022-08-13,0,yes
+C00441,41,50,46.31,2413.58,month-to-month,Fiber optic,2022-08-16,1,yes
+C00442,53,27,55.68,1489.98,month-to-month,Fiber optic,2022-08-19,2,no
+C00443,19,6,100.57,714.27,month-to-month,Fiber optic,2022-08-22,1,no
+C00444,41,10,52.96,520.65,one-year,Fiber optic,2022-08-25,1,no
+C00445,59,29,54.45,1607.6,two-year,Fiber optic,2022-08-28,0,no
+C00446,60,0,86.71,190.74,month-to-month,DSL,2022-08-31,1,yes
+C00447,74,22,99.45,2314.96,month-to-month,Fiber optic,2022-09-03,2,no
+C00448,46,35,100.89,3723.62,month-to-month,Fiber optic,2022-09-06,3,no
+C00449,44,34,75.57,2516.49,two-year,DSL,2022-09-09,2,no
+C00450,48,63,54.57,,month-to-month,No,2022-09-12,1,no
+C00451,72,64,79.06,5180.24,one-year,No,2022-09-15,2,no
+C00452,24,28,82.85,2421.7,month-to-month,DSL,2022-09-18,1,yes
+C00453,27,24,64.61,1619.21,month-to-month,No,2022-09-21,0,no
+C00454,63,70,64.24,4517.22,month-to-month,No,2022-09-24,4,no
+C00455,30,53,89.13,4882.7,two-year,Fiber optic,2022-09-27,2,no
+C00456,53,12,119.2,1523.81,month-to-month,Fiber optic,2022-09-30,0,no
+C00457,37,33,28.18,1042.56,month-to-month,Fiber optic,2022-10-03,0,no
+C00458,61,42,71.08,3062.0,one-year,Fiber optic,2022-10-06,0,no
+C00459,41,60,30.57,1925.34,month-to-month,DSL,2022-10-09,1,no
+C00460,27,36,71.86,2604.39,one-year,No,2022-10-12,0,no
+C00461,69,16,62.34,1065.45,month-to-month,No,2022-10-15,1,no
+C00462,18,68,121.02,,month-to-month,DSL,2022-10-18,1,yes
+C00463,73,37,83.6,3134.22,one-year,No,2022-10-21,2,no
+C00464,20,40,43.48,1726.76,month-to-month,Fiber optic,2022-10-24,2,yes
+C00465,47,45,109.08,4988.35,month-to-month,Fiber optic,2022-10-27,2,yes
+C00466,70,67,31.48,2113.38,month-to-month,No,2022-10-30,1,yes
+C00467,57,27,87.44,2539.01,one-year,DSL,2022-11-02,0,no
+C00468,30,62,115.47,7164.74,two-year,DSL,2022-11-05,2,no
+C00469,53,40,80.19,3254.94,two-year,Fiber optic,2022-11-08,2,no
+C00470,29,63,88.28,5729.54,month-to-month,Fiber optic,2022-11-11,4,yes
+C00471,67,21,83.82,1835.45,month-to-month,DSL,2022-11-14,2,yes
+C00472,21,62,67.2,4304.53,month-to-month,Fiber optic,2022-11-17,5,yes
+C00473,24,71,77.8,5601.69,month-to-month,DSL,2022-11-20,1,yes
+C00474,58,36,33.16,1204.26,one-year,Fiber optic,2022-11-23,0,no
+C00475,50,49,85.01,4340.45,two-year,No,2022-11-26,2,no
+C00476,60,59,53.52,3243.18,one-year,DSL,2022-11-29,2,no
+C00477,64,45,92.01,4229.3,month-to-month,DSL,2022-12-02,3,yes
+C00478,22,66,62.79,4147.12,two-year,Fiber optic,2022-12-05,3,no
+C00479,62,67,68.22,4627.08,one-year,DSL,2022-12-08,2,no
+C00480,39,12,65.49,814.29,month-to-month,No,2022-12-11,1,no
+C00481,61,31,50.55,1564.18,one-year,DSL,2022-12-14,2,no
+C00482,29,58,84.11,5016.59,one-year,Fiber optic,2022-12-17,3,no
+C00483,73,70,64.37,4514.46,one-year,Fiber optic,2022-12-20,2,no
+C00484,45,65,44.71,2885.75,month-to-month,Fiber optic,2022-12-23,4,yes
+C00485,19,6,59.29,473.06,month-to-month,DSL,2022-12-26,1,no
+C00486,58,58,66.23,3904.58,one-year,DSL,2022-12-29,0,no
+C00487,24,71,80.68,5709.31,month-to-month,Fiber optic,2023-01-01,1,no
+C00488,52,8,75.72,703.85,one-year,DSL,2023-01-04,1,yes
+C00489,26,51,58.94,3016.84,two-year,Fiber optic,2023-01-07,0,no
+C00490,30,33,77.54,2631.75,two-year,No,2023-01-10,1,no
+C00491,51,41,126.53,5339.13,one-year,Fiber optic,2023-01-13,1,no
+C00492,51,69,,4551.72,one-year,DSL,2023-01-16,1,no
+C00493,42,25,10.0,292.19,one-year,DSL,2023-01-19,2,no
+C00494,34,19,41.77,776.89,month-to-month,DSL,2023-01-22,0,yes
+C00495,21,14,53.93,875.23,one-year,No,2023-01-25,0,no
+C00496,37,14,99.87,1467.99,month-to-month,No,2023-01-28,2,no
+C00497,33,70,100.88,7110.2,month-to-month,DSL,2023-01-31,2,no
+C00498,74,17,57.98,1071.76,month-to-month,Fiber optic,2023-02-03,0,yes
+C00499,40,16,75.74,1307.48,one-year,Fiber optic,2023-02-06,0,no
