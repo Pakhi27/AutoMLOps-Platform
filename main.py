@@ -10,7 +10,9 @@ prediction serving, and drift monitoring into a single API surface.
 
 from __future__ import annotations
 
-
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
 
 from contextlib import asynccontextmanager
 
@@ -28,11 +30,11 @@ from fastapi.staticfiles import StaticFiles
 
 
 
-from app.api import routes_agent, routes_chat, routes_dataset, routes_mle, routes_monitor, routes_multimodal, routes_pipeline, routes_predict
+from api import routes_agent, routes_chat, routes_dataset, routes_mle, routes_monitor, routes_multimodal, routes_pipeline, routes_predict
 
-from app.core.config import BASE_DIR, get_settings
+from core.config import BASE_DIR, get_settings
 
-from app.core.logging_config import configure_logging, get_logger
+from core.logging_config import configure_logging, get_logger
 
 
 
